@@ -4,5 +4,5 @@ Pasos para correr el Proyecto:
 - "composer require laravel/breeze --dev"
 - "php artisan breeze:install"
 3. php artisan migrate:fresh --seed
-*CORREO: javier@arten.com
-*CONTRASEÑA:   12345
+.*CORREO: javier@arten.com
+.*CONTRASEÑA:   12345
