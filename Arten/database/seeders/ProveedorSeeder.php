@@ -16,7 +16,7 @@ class ProveedorSeeder extends Seeder
     {
         $regiones = Region::pluck('id');
 
-        foreach (range(1, 100) as $index) {
+        foreach (range(1, 10000) as $index) {
             Proveedor::create([
                 'nombre' => 'Proveedor ' . $index,
                 'razon_social' => 'Razón Social ' . $index,
