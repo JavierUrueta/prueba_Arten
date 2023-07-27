@@ -40,8 +40,15 @@
                             <a class="nav-link active" href="/productos">Productos</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search" >
-                        <button class="btn btn-outline-success" type="submit" style="margin-right: 50px; color:black; border-color:black; background-color:white;">Sign Out</button>
+                    <form class="d-flex" role="search" method="POST" action="{{ route('logout') }}">
+                        @csrf
+
+                        <x-responsive-nav-link :href="route('logout')"
+                                onclick="event.preventDefault();
+                                            this.closest('form').submit();" class="btn btn-outline-success" style="margin-right: 50px; color:black; border-color:black; background-color:white;">
+                            {{ __('Cerrar Sesion') }}
+                            
+                        </x-responsive-nav-link>
                     </form>
                 </div>
             </div>

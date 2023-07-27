@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             RegionSeeder::class,
             ProveedorSeeder::class,
+            UserSeeder::class,
             // Otros seeders que desees ejecutar
         ]);
     }
